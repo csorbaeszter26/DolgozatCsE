@@ -2,6 +2,7 @@ package hu.szamalk;
 
 import java.util.Random;
 
+
 public class Tabla {
 
     private char[][] T;
@@ -42,9 +43,9 @@ public class Tabla {
 
             }
 
-
-
     }
+
+    public
 
 
 }
