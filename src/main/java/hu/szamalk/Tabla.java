@@ -14,6 +14,18 @@ public class Tabla {
                 this.T[i][j] = this.uresCella;
             }
         }
+
+    }
+
+    public String Megjelenit(){
+        String tabla = "";
+        for (int i = 0; i < T.length; i++){
+            for (int j = 0; i < T.length; i++){
+                tabla += this.T[i][j];
+
+            }tabla += "\n";
+        }
+        return tabla;
     }
 
 
