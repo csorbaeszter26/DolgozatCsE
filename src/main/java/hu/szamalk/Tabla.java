@@ -8,9 +8,9 @@ public class Tabla {
     private char[][] T;
     private char uresCella;
 
-    public Tabla(char uresCella) {
+    public Tabla(char urescella) {
         T = new char[8][8];
-        uresCella = uresCella;
+        uresCella = urescella;
 
         for (int i = 0; i < T.length; i++){
             for (int j = 0; j < T[i].length; j++){
@@ -23,7 +23,7 @@ public class Tabla {
     public String Megjelenit(){
         String tabla = "";
         for (int i = 0; i < T.length; i++){
-            for (int j = 0; i < T[i].length; i++){
+            for (int j = 0; j < T[i].length; j++){
                 tabla += this.T[i][j];
 
             }tabla += '\n';
@@ -34,18 +34,40 @@ public class Tabla {
     public void Elhelyez(int N){
         Random random= new Random();
 
-            for (int j = 0; j < N; j++){
-                int egy = random.nextInt();
-                int ketto = random.nextInt();
+            for (int i = 0; i < N; i++){
+                int egy = random.nextInt(8);
+                int ketto = random.nextInt(8);
                 if (T[egy][ketto] != uresCella){
-                    this.T[egy][ketto] = 'K';
+                    T[egy][ketto] = 'K';
                 }
 
             }
 
     }
 
-    public
+
+    /*public boolean UresOszlop(int oszlop){
+
+
+    }*/
+
+
+    public boolean UresOszlop(int oszlop){
+        boolean szam = 0.0;
+        for (int i =0; i < T.length; i++){
+
+
+        }return szam;
+
+    }
+    public boolean UresSor(int sor){
+        int szam = 0;
+        for (int i =0; i < T[sor].length; i++){
+
+
+        }return szam;
+    }
+
 
 
 }

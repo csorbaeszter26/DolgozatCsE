@@ -7,8 +7,11 @@ public class Main {
 
         Tabla tabla = new Tabla('#');
 
-        tabla.Megjelenit();
+        System.out.println(tabla.Megjelenit());
         tabla.Elhelyez(8);
+        tabla.UresSor();
+        tabla.UresOszlop();
+
 
     }
 }
